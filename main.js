@@ -20,3 +20,8 @@ while (contador < listaDeTeclas.length ){
     del.onclick = somBip;
 }
 
+function insert (numero) {
+        
+        document.getElementById('display').innerHTML = numero;
+
+      }

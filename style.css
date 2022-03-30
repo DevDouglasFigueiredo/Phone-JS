@@ -12,10 +12,17 @@
     
   }
 
+  main{
+    background-color: #494949;
+    padding: 1rem;
+    border-radius: 30px;
+  }
+
   h1{
       text-align: center;
   }
-  
+
+
   input {
     border: none;
     color: inherit;
