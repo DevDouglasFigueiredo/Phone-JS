@@ -30,6 +30,11 @@
     font-size: inherit;
     font-weight: inherit;
     font-family: inherit;
+    
+  }
+
+  #display{
+    background: transparent;
   }
   
   h1 {

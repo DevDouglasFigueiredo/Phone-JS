@@ -1,37 +1,26 @@
-const listaDeTeclas = document.querySelectorAll('#tecla');
+const listaDeTeclas = document.querySelectorAll('#teclas');
 const del = document.querySelector('#delete');
 const chamar = document.querySelector('#chamar');
 const input = document.querySelector('#display')
-
-
-let contador = 0;
-
-function SomOcupado(){
-    document.querySelector('#somOcupado').play();
-    
-
-}
-
-chamar.onclick = SomOcupado;
-
 
 function somBip() {
     document.querySelector('#bip').play();
   }
 
-  del.onclick = somBip;
+function somOcupado (){
+    document.querySelector('#somOcupado').play();
+}
 
-function insert(numero) {
-    document.getElementById('display').value += numero
-    somBip()
-  }
+function insert (digitosTeclado){
+    document.getElementById('display').value += digitosTeclado;
+    somBip();
+}
 
-  function clean(){
-      document.getElementById('display').value = "";
-      document.querySelector('#somOcupado').pause();
-  }
+function clean(){
+    document.getElementById('display').value = '';
+    document.querySelector('#somOcupado').pause();
 
-  // Na função insert, coloquei uma condição de que SE o comprimento do valor do input for MENOR QUE 13, as teclas adicionam o valor e tocam o som. SE NÂO, ele desabilita as teclas, então a pessoa não consegue mais apertar os botões
+}
 
 function insert(numero) {
     if (input.value.length < 13) {
@@ -41,3 +30,6 @@ function insert(numero) {
       listaDeTeclas.disabled = 'true'
     }
   }
+  
+chamar.onclick = somOcupado;
+del.onclick = somBip;
