@@ -29,11 +29,12 @@
                 <input id="tecla" type="button" onclick="insert('0')" value="0">
                 <input id="tecla" type="button" onclick="insert('#')" value="#">
                 <button id="chamar"><img src="img/icons8-chamada-de-saída-48.png" alt=""></button>
-                <button id="delete"><img src="img/icons8-limpar-símbolo-50.png" alt=""></button>
-                <button id="desligar"><img src="img/icons8-chamada-desligada-48.png" alt=""></button>
+                <button id="desligar delete" onclick="clean()"><img src="img/icons8-limpar-símbolo-50.png" alt=""></button>
+                <button id="desligar delete" onclick="clean()"><img src="img/icons8-chamada-desligada-48.png" alt=""></button>
             </section>
           
         <audio id="bip" src="sound/keyx.wav"></audio>
+        <audio id="somOcupado" src="sound/som-ocupado.mpeg"></audio>
     </main>
     <script src="main.js"></script>
 </body>
