@@ -1,5 +1,4 @@
 const listaDeTeclas = document.querySelectorAll('#teclas');
-const del = document.querySelector('#delete');
 const chamar = document.querySelector('#chamar');
 const input = document.querySelector('#display')
 
@@ -7,8 +6,8 @@ function somBip() {
     document.querySelector('#bip').play();
   }
 
-function somOcupado (){
-    document.querySelector('#somOcupado').play();
+function somChamada (){
+    document.querySelector('#somChamada').play();
 }
 
 function insert (digitosTeclado){
@@ -18,7 +17,7 @@ function insert (digitosTeclado){
 
 function clean(){
     document.getElementById('display').value = '';
-    document.querySelector('#somOcupado').pause();
+    document.querySelector('#somChamada').pause();
 
 }
 
@@ -31,5 +30,4 @@ function insert(numero) {
     }
   }
   
-chamar.onclick = somOcupado;
-del.onclick = somBip;
+chamar.onclick = somChamada;
