@@ -1,6 +1,7 @@
 const listaDeTeclas = document.querySelectorAll('#teclas');
 const chamar = document.querySelector('#chamar');
 const input = document.querySelector('#display')
+const del = document.querySelector('#delete');
 
 function somBip() {
     document.querySelector('#bip').play();
@@ -26,8 +27,10 @@ function insert(numero) {
       input.value += numero
       somBip()
     } else {
-      listaDeTeclas.disabled = 'true'
+      listaDeTeclas.disabled = 'true';
+      
     }
   }
   
-chamar.onclick = somChamada;
+chamar.addEventListener('click', somChamada);
+del.addEventListener('click', clean);
